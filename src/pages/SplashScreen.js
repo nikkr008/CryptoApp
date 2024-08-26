@@ -30,7 +30,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '##181c24',
+    backgroundColor: '#181c24',
     height: windowHeight,
     width: windowWidth
   },
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     padding: 1,
     width: '100%',
     height: '100%',
-    resizeMode: 'contain',
+    // resizeMode: 'contain',
     position: 'absolute'
   },
   bar:{
@@ -48,9 +48,9 @@ const styles = StyleSheet.create({
     marginBottom: 20
   },
   txt:{
-    fontSize: 24,
+    fontSize: 30,
     fontWeight: '700',
-    
+    color: '#fff'
   }
 });
 

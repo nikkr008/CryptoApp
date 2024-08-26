@@ -52,7 +52,7 @@ const TabNavigator = () => {
 export const DrawerNavigator = () => {
   return (
     <Drawer.Navigator>
-      <Drawer.Screen name="Tabs" component={TabNavigator} options={{ headerShown: false }}/>
+      <Drawer.Screen name="Tabs" component={TabNavigator} />
       <Drawer.Screen name="Profile" component={ProfileScreen} options={{ headerShown: false }} />
       <Drawer.Screen name="Setting" component={SettingScreen} options={{ headerShown: false }} />
       <Drawer.Screen name="logout" component={LoginScreen} options={{ headerShown: false }} />

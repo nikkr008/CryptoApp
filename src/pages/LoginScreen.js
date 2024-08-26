@@ -15,9 +15,10 @@ const LoginScreen = ({ navigation }) => {
     console.log('Login pressed');
     console.log('Username:', username);
     console.log('Password:', password);
-    if(username === 'nik.kr008@gmail.com' && password === 'password'){
-      navigation.navigate('PhonePage');
-    }
+    // if(username === 'nik.kr008@gmail.com' && password === 'password'){
+    //   navigation.navigate('PhonePage');
+    // }
+    navigation.navigate('PhonePage');
   }
 
   return (

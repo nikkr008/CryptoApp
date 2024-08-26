@@ -1,6 +1,5 @@
 import { StyleSheet, Text, View, Image, Dimensions, TouchableOpacity } from 'react-native'
 import React from 'react'
-import LoginScreen from './LoginScreen';
 
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -22,7 +21,7 @@ export default function WelcomeScreen({ navigation }) {
             <Text style = {{fontSize: windowHeight*0.03, color: '#fff', fontWeight: 'bold'}}> Login </Text>
         </View>
       </TouchableOpacity>
-      <TouchableOpacity>
+      <TouchableOpacity onPress={()=>navigation.navigate('RegisterScreen')}>
         <View style={[styles.btn, {backgroundColor: '#20e3e3'}]}>
             <Text style = {{fontSize: windowHeight*0.03, color: '#fff', fontWeight: 'bold'}}> Register </Text>
         </View>

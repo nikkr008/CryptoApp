@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Dimensions, View, FlatList, Text, Image, StyleSheet } from 'react-native';
+import { Button, Dimensions, View, FlatList, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { Data, CryptoData } from '../utils/Data';
 import Cards from './Cards';
 import CryptoCard from './CryptoCard';
@@ -7,7 +7,7 @@ import Icon from 'react-native-vector-icons/Ionicons';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
 
-export default function HomeScreen() {
+export default function HomeScreen({ navigation }) {
   const renderItem = ({ item }) => (
     <Cards 
             title={item.title}
@@ -64,6 +64,13 @@ export default function HomeScreen() {
               </View>
               <Text style={styles.label}>Swap</Text>
             </View>
+          </View>
+          <View>
+            <TouchableOpacity onPress={()=>{navigation.navigate('Charts')}}>
+              <View style={{backgroundColor: 'red', height: 50, width: windowWidth, alignItems: 'center'}}>
+                <Text >Charts</Text>
+              </View>
+            </TouchableOpacity>
           </View>
         </View>
       );
