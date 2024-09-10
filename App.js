@@ -10,7 +10,8 @@ import OtpPage from './src/pages/OtpPage';
 import CreatePassword from './src/pages/CreatePassword';
 import LocationPage from './src/pages/LocationPage';
 import RegisterScreen from './src/pages/RegisterScreen';
-import Charts from './src/utils/Charts';
+import ChartsPage from './src/pages/ChartsPage';
+import CompanyList from './src/pages/CompanyList';
 
 const Stack = createStackNavigator();
 
@@ -26,8 +27,9 @@ export default function App() {
         <Stack.Screen name="OtpPage" component={OtpPage} />
         <Stack.Screen name="CreatePassword" component={CreatePassword} />
         <Stack.Screen name="LocationPage" component={LocationPage} />
-        <Stack.Screen name="Charts" component={Charts} />
+        <Stack.Screen name="ChartsPage" component={ChartsPage} />
         <Stack.Screen name="Main" component={DrawerNavigator} />
+        <Stack.Screen name="CompanyList" component={CompanyList} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Button, Dimensions, View, FlatList, Text, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { Data, CryptoData } from '../utils/Data';
-import Cards from './Cards';
-import CryptoCard from './CryptoCard';
+import Cards from '../components/Cards';
+import CryptoCard from '../components/CryptoCard';
 import Icon from 'react-native-vector-icons/Ionicons';
 const windowWidth = Dimensions.get('window').width;
 const windowHeight = Dimensions.get('window').height;
@@ -66,7 +66,7 @@ export default function HomeScreen({ navigation }) {
             </View>
           </View>
           <View>
-            <TouchableOpacity onPress={()=>{navigation.navigate('Charts')}}>
+            <TouchableOpacity onPress={()=>{navigation.navigate('CompanyList')}}>
               <View style={{backgroundColor: 'red', height: 50, width: windowWidth, alignItems: 'center'}}>
                 <Text >Charts</Text>
               </View>
